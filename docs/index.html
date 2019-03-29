@@ -834,7 +834,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>List sites</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_sites">https://partner-docs.recurly.com/v2019-01-08#operation/list_sites</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_sites">https://partner-docs.recurly.com/v2019-01-08#operation/list_sites</a></p>
 
  
   
@@ -915,15 +915,150 @@ need and we will usher them to the appropriate places.</p>
                 
                 </li>
               
-                
-                <li><a
-                  href='#accountacquisitioncost'
-                  class="">
-                  AccountAcquisitionCost
-                  
-                </a>
-                
-                </li>
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#pager">Pager</a>&#x3C;Site></code>:
+        A list of sites.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='clientgetsite'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>getSite()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Fetch a site</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_site">https://partner-docs.recurly.com/v2019-01-08#operation/get_site</a></p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>getSite(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;Site></div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;Site></code>:
+        A site.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='clientlistaccounts'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>listAccounts(params)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>List a site's accounts</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_accounts">https://partner-docs.recurly.com/v2019-01-08#operation/list_accounts</a></p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>listAccounts(params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="#pager">Pager</a>&#x3C;Account></div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+            = <code>{}</code>)</code>
+	    The optional url parameters for this request.
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
               
                 
                 <li><a
@@ -11553,8 +11688,8 @@ prevent some records from being returned.
 
   
 
-  <p>Cancel a subscription</p>
-<p>API docs: <a href="https://partner-docs.recurly.com/v2018-08-09#operation/cancel_subscription">https://partner-docs.recurly.com/v2018-08-09#operation/cancel_subscription</a></p>
+  <p>Create an account</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_account">https://partner-docs.recurly.com/v2019-01-08#operation/create_account</a></p>
 
     <div class='pre p1 fill-light mt0'>cancelSubscription(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#subscription">Subscription</a>></div>
   
@@ -11646,8 +11781,8 @@ prevent some records from being returned.
 
   
 
-  <p>Reactivate a canceled subscription</p>
-<p>API docs: <a href="https://partner-docs.recurly.com/v2018-08-09#operation/reactivate_subscription">https://partner-docs.recurly.com/v2018-08-09#operation/reactivate_subscription</a></p>
+  <p>Fetch an account</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_account">https://partner-docs.recurly.com/v2019-01-08#operation/get_account</a></p>
 
     <div class='pre p1 fill-light mt0'>reactivateSubscription(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#subscription">Subscription</a>></div>
   
@@ -11720,8 +11855,8 @@ prevent some records from being returned.
 
   
 
-  <p>Fetch a site</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_site">https://partner-docs.recurly.com/v2019-01-08#operation/get_site</a></p>
+  <p>Modify an account</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/update_account">https://partner-docs.recurly.com/v2019-01-08#operation/update_account</a></p>
 
     <div class='pre p1 fill-light mt0'>pauseSubscription(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, body: SubscriptionPause): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#subscription">Subscription</a>></div>
   
@@ -11803,8 +11938,8 @@ prevent some records from being returned.
 
   
 
-  <p>List a site's accounts</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_accounts">https://partner-docs.recurly.com/v2019-01-08#operation/list_accounts</a></p>
+  <p>Deactivate an account</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/deactivate_account">https://partner-docs.recurly.com/v2019-01-08#operation/deactivate_account</a></p>
 
     <div class='pre p1 fill-light mt0'>resumeSubscription(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#subscription">Subscription</a>></div>
   
@@ -11877,8 +12012,8 @@ prevent some records from being returned.
 
   
 
-  <p>Fetch a subscription's pending change</p>
-<p>API docs: <a href="https://partner-docs.recurly.com/v2018-08-09#operation/get_subscription_change">https://partner-docs.recurly.com/v2018-08-09#operation/get_subscription_change</a></p>
+  <p>Fetch an account's acquisition data</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_account_acquisition">https://partner-docs.recurly.com/v2019-01-08#operation/get_account_acquisition</a></p>
 
     <div class='pre p1 fill-light mt0'>getSubscriptionChange(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#subscriptionchange">SubscriptionChange</a>></div>
   
@@ -11951,8 +12086,8 @@ prevent some records from being returned.
 
   
 
-  <p>Create an account</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_account">https://partner-docs.recurly.com/v2019-01-08#operation/create_account</a></p>
+  <p>Update an account's acquisition data</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/update_account_acquisition">https://partner-docs.recurly.com/v2019-01-08#operation/update_account_acquisition</a></p>
 
     <div class='pre p1 fill-light mt0'>createSubscriptionChange(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, body: SubscriptionChangeCreate): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#subscriptionchange">SubscriptionChange</a>></div>
   
@@ -12034,8 +12169,8 @@ prevent some records from being returned.
 
   
 
-  <p>Fetch an account</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_account">https://partner-docs.recurly.com/v2019-01-08#operation/get_account</a></p>
+  <p>Remove an account's acquisition data</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_account_acquisition">https://partner-docs.recurly.com/v2019-01-08#operation/remove_account_acquisition</a></p>
 
     <div class='pre p1 fill-light mt0'>removeSubscriptionChange(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></div>
   
@@ -12108,8 +12243,8 @@ prevent some records from being returned.
 
   
 
-  <p>Modify an account</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/update_account">https://partner-docs.recurly.com/v2019-01-08#operation/update_account</a></p>
+  <p>Reactivate an inactive account</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_account">https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_account</a></p>
 
     <div class='pre p1 fill-light mt0'>listSubscriptionInvoices(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="#pager">Pager</a>&#x3C;<a href="#invoice">Invoice</a>></div>
   
@@ -12301,8 +12436,8 @@ prevent some records from being returned.
 
   
 
-  <p>Fetch an account's acquisition data</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_account_acquisition">https://partner-docs.recurly.com/v2019-01-08#operation/get_account_acquisition</a></p>
+  <p>Fetch an account's balance and past due status</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_account_balance">https://partner-docs.recurly.com/v2019-01-08#operation/get_account_balance</a></p>
 
     <div class='pre p1 fill-light mt0'>listSubscriptionLineItems(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="#pager">Pager</a>&#x3C;<a href="#lineitem">LineItem</a>></div>
   
@@ -12447,13 +12582,8 @@ prevent some records from being returned.
 </tr>
 
 
-              
-                <tr>
-  <td class='break-word'><span class='code bold'>params.state</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
-  </td>
-  <td class='break-word'><span>Filter by state field.
-</span></td>
-</tr>
+  <p>Fetch an account's billing information</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_billing_info">https://partner-docs.recurly.com/v2019-01-08#operation/get_billing_info</a></p>
 
 
               
@@ -12506,8 +12636,8 @@ prevent some records from being returned.
 
   
 
-  <p>Update an account's acquisition data</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/update_account_acquisition">https://partner-docs.recurly.com/v2019-01-08#operation/update_account_acquisition</a></p>
+  <p>Set an account's billing information</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/update_billing_info">https://partner-docs.recurly.com/v2019-01-08#operation/update_billing_info</a></p>
 
     <div class='pre p1 fill-light mt0'>listSubscriptionCouponRedemptions(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="#pager">Pager</a>&#x3C;<a href="#couponredemption">CouponRedemption</a>></div>
   
@@ -12603,10 +12733,8 @@ prevent some records from being returned.
 <code>sort=updated_at</code>
 .
 
-<strong>Note:</strong>
- this value is an ISO8601 timestamp. A partial timestamp that does not include a time zone will default to UTC.
-</span></td>
-</tr>
+  <p>Remove an account's billing information</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_billing_info">https://partner-docs.recurly.com/v2019-01-08#operation/remove_billing_info</a></p>
 
 
               
@@ -12672,8 +12800,8 @@ prevent some records from being returned.
 
   
 
-  <p>List a site's transactions</p>
-<p>API docs: <a href="https://partner-docs.recurly.com/v2018-08-09#operation/list_transactions">https://partner-docs.recurly.com/v2018-08-09#operation/list_transactions</a></p>
+  <p>Show the coupon redemptions for an account</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_account_coupon_redemptions">https://partner-docs.recurly.com/v2019-01-08#operation/list_account_coupon_redemptions</a></p>
 
     <div class='pre p1 fill-light mt0'>listTransactions(params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="#pager">Pager</a>&#x3C;<a href="#transaction">Transaction</a>></div>
   
@@ -12871,8 +12999,8 @@ prevent some records from being returned.
 
   
 
-  <p>Reactivate an inactive account</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_account">https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_account</a></p>
+  <p>Show the coupon redemption that is active on an account</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_active_coupon_redemption">https://partner-docs.recurly.com/v2019-01-08#operation/get_active_coupon_redemption</a></p>
 
     <div class='pre p1 fill-light mt0'>getTransaction(transactionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#transaction">Transaction</a>></div>
   
@@ -12945,8 +13073,8 @@ prevent some records from being returned.
 
   
 
-  <p>Fetch an account's balance and past due status</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_account_balance">https://partner-docs.recurly.com/v2019-01-08#operation/get_account_balance</a></p>
+  <p>Generate an active coupon redemption on an account</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_coupon_redemption">https://partner-docs.recurly.com/v2019-01-08#operation/create_coupon_redemption</a></p>
 
     <div class='pre p1 fill-light mt0'>getUniqueCouponCode(uniqueCouponCodeId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#uniquecouponcode">UniqueCouponCode</a>></div>
   
@@ -13089,8 +13217,8 @@ prevent some records from being returned.
 
   
 
-  <p>Set an account's billing information</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/update_billing_info">https://partner-docs.recurly.com/v2019-01-08#operation/update_billing_info</a></p>
+  <p>Delete the active coupon redemption from an account</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_coupon_redemption">https://partner-docs.recurly.com/v2019-01-08#operation/remove_coupon_redemption</a></p>
 
     <div class='pre p1 fill-light mt0'>reactivateUniqueCouponCode(uniqueCouponCodeId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#uniquecouponcode">UniqueCouponCode</a>></div>
   
@@ -13176,8 +13304,8 @@ prevent some records from being returned.
 
   
 
-  <p>Remove an account's billing information</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_billing_info">https://partner-docs.recurly.com/v2019-01-08#operation/remove_billing_info</a></p>
+  <p>List an account's credit payments</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_account_credit_payments">https://partner-docs.recurly.com/v2019-01-08#operation/list_account_credit_payments</a></p>
 
     <div class='pre p1 fill-light mt0'>createPurchase(body: PurchaseCreate): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#invoicecollection">InvoiceCollection</a>></div>
   
@@ -13246,8 +13374,8 @@ prevent some records from being returned.
 
   
 
-  <p>Show the coupon redemptions for an account</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_account_coupon_redemptions">https://partner-docs.recurly.com/v2019-01-08#operation/list_account_coupon_redemptions</a></p>
+  <p>List an account's invoices</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_account_invoices">https://partner-docs.recurly.com/v2019-01-08#operation/list_account_invoices</a></p>
 
     <div class='pre p1 fill-light mt0'>previewPurchase(body: PurchaseCreate): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#invoicecollection">InvoiceCollection</a>></div>
   
@@ -13379,8 +13507,8 @@ returned at once you can sort the records yourself.</li>
 
   
 
-  <p>Show the coupon redemption that is active on an account</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_active_coupon_redemption">https://partner-docs.recurly.com/v2019-01-08#operation/get_active_coupon_redemption</a></p>
+  <p>Create an invoice for pending line items</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/create_invoice</a></p>
 
   
   <div class='clearfix'>
@@ -13463,8 +13591,8 @@ returned at once you can sort the records yourself.</li>
 
   
 
-  <p>Generate an active coupon redemption on an account</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_coupon_redemption">https://partner-docs.recurly.com/v2019-01-08#operation/create_coupon_redemption</a></p>
+  <p>Preview new invoice for pending line items</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/preview_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/preview_invoice</a></p>
 
     <div class='pre p1 fill-light mt0'>eachPage()</div>
   
@@ -13511,8 +13639,8 @@ returned at once you can sort the records yourself.</li>
 
   
 
-  <p>Delete the active coupon redemption from an account</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_coupon_redemption">https://partner-docs.recurly.com/v2019-01-08#operation/remove_coupon_redemption</a></p>
+  <p>List an account's line items</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_account_line_items">https://partner-docs.recurly.com/v2019-01-08#operation/list_account_line_items</a></p>
 
     <div class='pre p1 fill-light mt0'>each()</div>
   
@@ -13603,13 +13731,8 @@ Schema object for this Resource.</p>
 
   
 
-  
-</section>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
+  <p>Create a new line item for the account</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_line_item">https://partner-docs.recurly.com/v2019-01-08#operation/create_line_item</a></p>
 
   
   <div class='clearfix'>
@@ -13677,8 +13800,8 @@ of this class type</p>
 
   
 
-  <p>List an account's invoices</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_account_invoices">https://partner-docs.recurly.com/v2019-01-08#operation/list_account_invoices</a></p>
+  <p>Fetch a list of an account's notes</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_account_notes">https://partner-docs.recurly.com/v2019-01-08#operation/list_account_notes</a></p>
 
   <p>Account</p>
 
@@ -13900,10 +14023,8 @@ of this class type</p>
   </div>
   
 
-  <p>This file is automatically created by Recurly's OpenAPI generation process
-and thus any edits you make by hand will be lost. If you wish to make a
-change to this file, please create a Github issue explaining the changes you
-need and we will usher them to the appropriate places.</p>
+  <p>Fetch an account note</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_account_note">https://partner-docs.recurly.com/v2019-01-08#operation/get_account_note</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -13951,8 +14072,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>Create an invoice for pending line items</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/create_invoice</a></p>
+  <p>Fetch a list of an account's shipping addresses</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_shipping_addresses">https://partner-docs.recurly.com/v2019-01-08#operation/list_shipping_addresses</a></p>
 
     <div class='pre p1 fill-light mt0'>AccountAcquisition</div>
   
@@ -14053,8 +14174,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  <p>Preview new invoice for pending line items</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/preview_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/preview_invoice</a></p>
+  <p>Create a new shipping address for the account</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_shipping_address">https://partner-docs.recurly.com/v2019-01-08#operation/create_shipping_address</a></p>
 
     <div class='pre p1 fill-light mt0'>AccountAcquisitionCost</div>
   
@@ -14136,7 +14257,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
+  <p>Fetch an account's shipping address</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_shipping_address">https://partner-docs.recurly.com/v2019-01-08#operation/get_shipping_address</a></p>
 
   
 </section>
@@ -14259,7 +14381,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
+  <p>Update an account's shipping address</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/update_shipping_address">https://partner-docs.recurly.com/v2019-01-08#operation/update_shipping_address</a></p>
 
   
 
@@ -14386,8 +14509,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  <p>Create a new line item for the account</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_line_item">https://partner-docs.recurly.com/v2019-01-08#operation/create_line_item</a></p>
+  <p>Remove an account's shipping address</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_shipping_address">https://partner-docs.recurly.com/v2019-01-08#operation/remove_shipping_address</a></p>
 
   <p>AccountMini</p>
 
@@ -14495,10 +14618,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>This file is automatically created by Recurly's OpenAPI generation process
-and thus any edits you make by hand will be lost. If you wish to make a
-change to this file, please create a Github issue explaining the changes you
-need and we will usher them to the appropriate places.</p>
+  <p>List an account's subscriptions</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_account_subscriptions">https://partner-docs.recurly.com/v2019-01-08#operation/list_account_subscriptions</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -14622,8 +14743,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  <p>Fetch a list of an account's shipping addresses</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_shipping_addresses">https://partner-docs.recurly.com/v2019-01-08#operation/list_shipping_addresses</a></p>
+  <p>List an account's transactions</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_account_transactions">https://partner-docs.recurly.com/v2019-01-08#operation/list_account_transactions</a></p>
 
     <div class='pre p1 fill-light mt0'>AddOn</div>
   
@@ -14880,7 +15001,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
+  <p>List an account's child accounts</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_child_accounts">https://partner-docs.recurly.com/v2019-01-08#operation/list_child_accounts</a></p>
 
   
 
@@ -15149,10 +15271,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>This file is automatically created by Recurly's OpenAPI generation process
-and thus any edits you make by hand will be lost. If you wish to make a
-change to this file, please create a Github issue explaining the changes you
-need and we will usher them to the appropriate places.</p>
+  <p>List a site's account acquisition data</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_account_acquisition">https://partner-docs.recurly.com/v2019-01-08#operation/list_account_acquisition</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -15341,10 +15461,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>This file is automatically created by Recurly's OpenAPI generation process
-and thus any edits you make by hand will be lost. If you wish to make a
-change to this file, please create a Github issue explaining the changes you
-need and we will usher them to the appropriate places.</p>
+  <p>List a site's coupons</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_coupons">https://partner-docs.recurly.com/v2019-01-08#operation/list_coupons</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -15512,7 +15630,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
+  <p>Create a new coupon</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_coupon">https://partner-docs.recurly.com/v2019-01-08#operation/create_coupon</a></p>
 
   
 
@@ -15635,15 +15754,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
-
-  <p>List a site's account acquisition data</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_account_acquisition">https://partner-docs.recurly.com/v2019-01-08#operation/list_account_acquisition</a></p>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
+  <p>Fetch a coupon</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_coupon">https://partner-docs.recurly.com/v2019-01-08#operation/get_coupon</a></p>
 
   
   <div class='clearfix'>
@@ -15834,18 +15946,8 @@ need and we will usher them to the appropriate places.</p>
           <span class='code bold'>state</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
           : Indicates if the coupon is redeemable, and if it is not, why.
 
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>temporalAmount</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
-          : If 
-<code>duration</code>
- is "temporal" than 
-<code>temporal_amount</code>
- is an integer which is multiplied by 
-<code>temporal_unit</code>
- to define the duration that the coupon will be applied to invoices for.
+  <p>Update an active coupon</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/update_coupon">https://partner-docs.recurly.com/v2019-01-08#operation/update_coupon</a></p>
 
           
         </div>
@@ -15920,8 +16022,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>List a site's coupons</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_coupons">https://partner-docs.recurly.com/v2019-01-08#operation/list_coupons</a></p>
+  <p>List unique coupon codes associated with a bulk coupon</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_unique_coupon_codes">https://partner-docs.recurly.com/v2019-01-08#operation/list_unique_coupon_codes</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -16083,7 +16185,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
+  <p>List a site's credit payments</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_credit_payments">https://partner-docs.recurly.com/v2019-01-08#operation/list_credit_payments</a></p>
 
   
 
@@ -16211,13 +16314,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
-</section>
-
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
+  <p>Fetch a credit payment</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_credit_payment">https://partner-docs.recurly.com/v2019-01-08#operation/get_credit_payment</a></p>
 
   
   <div class='clearfix'>
@@ -16304,8 +16402,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>List a site's credit payments</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_credit_payments">https://partner-docs.recurly.com/v2019-01-08#operation/list_credit_payments</a></p>
+  <p>List a site's custom field definitions</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_custom_field_definitions">https://partner-docs.recurly.com/v2019-01-08#operation/list_custom_field_definitions</a></p>
 
   
   
@@ -16487,7 +16585,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
+  <p>Fetch an custom field definition</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_custom_field_definition">https://partner-docs.recurly.com/v2019-01-08#operation/get_custom_field_definition</a></p>
 
   
 </section>
@@ -16611,10 +16710,8 @@ need and we will usher them to the appropriate places.</p>
   
 </section>
 
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
+  <p>List a site's invoices</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_invoices">https://partner-docs.recurly.com/v2019-01-08#operation/list_invoices</a></p>
 
   
   <div class='clearfix'>
@@ -16791,7 +16888,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
+  <p>Fetch an invoice</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/get_invoice</a></p>
 
   
 
@@ -16966,8 +17064,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>Collect a pending or past due, automatic invoice</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/collect_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/collect_invoice</a></p>
+  <p>Update an invoice</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/put_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/put_invoice</a></p>
 
     <div class='pre p1 fill-light mt0'>CustomField</div>
   
@@ -17039,8 +17137,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>Mark an open invoice as failed</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/fail_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/fail_invoice</a></p>
+  <p>Collect a pending or past due, automatic invoice</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/collect_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/collect_invoice</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -17078,6 +17176,14 @@ need and we will usher them to the appropriate places.</p>
   
   
 
+  <p>Mark an open invoice as failed</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/fail_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/fail_invoice</a></p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>failInvoice(invoiceId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;Invoice></div>
+   
+  
   
   
   
@@ -17161,6 +17267,14 @@ need and we will usher them to the appropriate places.</p>
 
   
 
+  <p>Mark an open invoice as successful</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/mark_invoice_successful">https://partner-docs.recurly.com/v2019-01-08#operation/mark_invoice_successful</a></p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>markInvoiceSuccessful(invoiceId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;Invoice></div>
+   
+  
   
 
   
@@ -17240,7 +17354,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Reopen a closed, manual invoice</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/reopen_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/reopen_invoice</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/reopen_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/reopen_invoice</a></p>
 
     <div class='pre p1 fill-light mt0'>Error</div>
   
@@ -17318,7 +17432,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>List a invoice's line items</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_invoice_line_items">https://partner-docs.recurly.com/v2019-01-08#operation/list_invoice_line_items</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_invoice_line_items">https://partner-docs.recurly.com/v2019-01-08#operation/list_invoice_line_items</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -17487,7 +17601,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Show the coupon redemptions applied to an invoice</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_invoice_coupon_redemptions">https://partner-docs.recurly.com/v2019-01-08#operation/list_invoice_coupon_redemptions</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_invoice_coupon_redemptions">https://partner-docs.recurly.com/v2019-01-08#operation/list_invoice_coupon_redemptions</a></p>
 
   <p>FraudInfo</p>
 
@@ -17580,7 +17694,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>List an invoice's related credit or charge invoices</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_related_invoices">https://partner-docs.recurly.com/v2019-01-08#operation/list_related_invoices</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_related_invoices">https://partner-docs.recurly.com/v2019-01-08#operation/list_related_invoices</a></p>
 
     <div class='pre p1 fill-light mt0'>Invoice</div>
   
@@ -17770,12 +17884,8 @@ need and we will usher them to the appropriate places.</p>
           <span class='code bold'>total</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
           : The final total on this invoice. The summation of invoice charges, discounts, credits, and tax.
 
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>transactions</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="#transaction">Transaction</a>>)</code>
-          : Transactions
+  <p>Refund an invoice</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/refund_invoice">https://partner-docs.recurly.com/v2019-01-08#operation/refund_invoice</a></p>
 
           
         </div>
@@ -17846,7 +17956,7 @@ change to this file, please create a Github issue explaining the changes you
 need and we will usher them to the appropriate places.</p>
 
   <p>List a site's line items</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_line_items">https://partner-docs.recurly.com/v2019-01-08#operation/list_line_items</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_line_items">https://partner-docs.recurly.com/v2019-01-08#operation/list_line_items</a></p>
 
   
   
@@ -18047,7 +18157,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
+  <p>Fetch a line item</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_line_item">https://partner-docs.recurly.com/v2019-01-08#operation/get_line_item</a></p>
 
   
 
@@ -18168,7 +18279,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
+  <p>Delete an uninvoiced line item</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_line_item">https://partner-docs.recurly.com/v2019-01-08#operation/remove_line_item</a></p>
 
   
 
@@ -18280,8 +18392,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  <p>Create a plan</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_plan">https://partner-docs.recurly.com/v2019-01-08#operation/create_plan</a></p>
+  <p>List a site's plans</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_plans">https://partner-docs.recurly.com/v2019-01-08#operation/list_plans</a></p>
 
   <p>LineItem</p>
 
@@ -18529,15 +18641,8 @@ need and we will usher them to the appropriate places.</p>
 <code>unknown</code>
 .
 
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>taxExempt</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
-          : <code>true</code>
- exempts tax on charges, 
-<code>false</code>
- applies tax on charges. If not defined, then defaults to the Plan and Site settings. This attribute does not work for credits (negative line items). Credits are always applied post-tax. Pre-tax discounts should use the Coupons feature.
+  <p>Create a plan</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_plan">https://partner-docs.recurly.com/v2019-01-08#operation/create_plan</a></p>
 
           
         </div>
@@ -18610,10 +18715,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>This file is automatically created by Recurly's OpenAPI generation process
-and thus any edits you make by hand will be lost. If you wish to make a
-change to this file, please create a Github issue explaining the changes you
-need and we will usher them to the appropriate places.</p>
+  <p>Fetch a plan</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_plan">https://partner-docs.recurly.com/v2019-01-08#operation/get_plan</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -18659,8 +18762,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>List a plan's add-ons</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_plan_add_ons">https://partner-docs.recurly.com/v2019-01-08#operation/list_plan_add_ons</a></p>
+  <p>Update a plan</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/update_plan">https://partner-docs.recurly.com/v2019-01-08#operation/update_plan</a></p>
 
     <div class='pre p1 fill-light mt0'>LineItemList</div>
   
@@ -18713,7 +18816,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  
+  <p>Remove a plan</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_plan">https://partner-docs.recurly.com/v2019-01-08#operation/remove_plan</a></p>
 
   
 
@@ -18773,8 +18877,8 @@ need and we will usher them to the appropriate places.</p>
   
 </section>
 
-  <p>Create an add-on</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_plan_add_on">https://partner-docs.recurly.com/v2019-01-08#operation/create_plan_add_on</a></p>
+  <p>List a plan's add-ons</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_plan_add_ons">https://partner-docs.recurly.com/v2019-01-08#operation/list_plan_add_ons</a></p>
 
     <div class='pre p1 fill-light mt0'>Plan</div>
   
@@ -18891,12 +18995,8 @@ need and we will usher them to the appropriate places.</p>
           <span class='code bold'>name</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
           : This name describes your plan and will appear on the Hosted Payment Page and the subscriber's invoice.
 
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <span class='code bold'>setupFeeAccountingCode</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
-          : Accounting code for invoice line items for the plan's setup fee. If no value is provided, it defaults to plan's accounting code.
+  <p>Create an add-on</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_plan_add_on">https://partner-docs.recurly.com/v2019-01-08#operation/create_plan_add_on</a></p>
 
           
         </div>
@@ -18990,7 +19090,7 @@ need and we will usher them to the appropriate places.</p>
 </section>
 
   <p>Fetch a plan's add-on</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_plan_add_on">https://partner-docs.recurly.com/v2019-01-08#operation/get_plan_add_on</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_plan_add_on">https://partner-docs.recurly.com/v2019-01-08#operation/get_plan_add_on</a></p>
 
   
   <div class='clearfix'>
@@ -19055,7 +19155,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Update an add-on</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/update_plan_add_on">https://partner-docs.recurly.com/v2019-01-08#operation/update_plan_add_on</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/update_plan_add_on">https://partner-docs.recurly.com/v2019-01-08#operation/update_plan_add_on</a></p>
 
     <div class='pre p1 fill-light mt0'>PlanHostedPages</div>
   
@@ -19146,7 +19246,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Remove an add-on</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_plan_add_on">https://partner-docs.recurly.com/v2019-01-08#operation/remove_plan_add_on</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_plan_add_on">https://partner-docs.recurly.com/v2019-01-08#operation/remove_plan_add_on</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -19231,7 +19331,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>List a site's add-ons</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_add_ons">https://partner-docs.recurly.com/v2019-01-08#operation/list_add_ons</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_add_ons">https://partner-docs.recurly.com/v2019-01-08#operation/list_add_ons</a></p>
 
  
   
@@ -19414,7 +19514,7 @@ prevent some records from being returned.
   
 
   <p>Fetch an add-on</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_add_on">https://partner-docs.recurly.com/v2019-01-08#operation/get_add_on</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_add_on">https://partner-docs.recurly.com/v2019-01-08#operation/get_add_on</a></p>
 
  
   
@@ -19496,7 +19596,7 @@ prevent some records from being returned.
   
 
   <p>List a site's shipping methods</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_shipping_methods">https://partner-docs.recurly.com/v2019-01-08#operation/list_shipping_methods</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_shipping_methods">https://partner-docs.recurly.com/v2019-01-08#operation/list_shipping_methods</a></p>
 
     <div class='pre p1 fill-light mt0'>PlanMini</div>
   
@@ -19678,7 +19778,7 @@ prevent some records from being returned.
   
 
   <p>Fetch a shipping method</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_shipping_method">https://partner-docs.recurly.com/v2019-01-08#operation/get_shipping_method</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_shipping_method">https://partner-docs.recurly.com/v2019-01-08#operation/get_shipping_method</a></p>
 
  
   
@@ -19752,7 +19852,7 @@ prevent some records from being returned.
   
 
   <p>List a site's subscriptions</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_subscriptions">https://partner-docs.recurly.com/v2019-01-08#operation/list_subscriptions</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_subscriptions">https://partner-docs.recurly.com/v2019-01-08#operation/list_subscriptions</a></p>
 
     <div class='pre p1 fill-light mt0'>PlanPricing</div>
   
@@ -19940,10 +20040,8 @@ need and we will usher them to the appropriate places.</p>
 
   
 
-  <p>This file is automatically created by Recurly's OpenAPI generation process
-and thus any edits you make by hand will be lost. If you wish to make a
-change to this file, please create a Github issue explaining the changes you
-need and we will usher them to the appropriate places.</p>
+  <p>Create a new subscription</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/create_subscription</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -19992,7 +20090,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>ShippingAddress</p>
+  <p>Fetch a subscription</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/get_subscription</a></p>
 
     <div class='pre p1 fill-light mt0'>ShippingAddress</div>
   
@@ -20160,7 +20259,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Modify a subscription</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/modify_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/modify_subscription</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/modify_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/modify_subscription</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -20207,7 +20306,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Terminate a subscription</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/terminate_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/terminate_subscription</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/terminate_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/terminate_subscription</a></p>
 
     <div class='pre p1 fill-light mt0'>Site</div>
   
@@ -20308,7 +20407,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Cancel a subscription</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/cancel_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/cancel_subscription</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/cancel_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/cancel_subscription</a></p>
 
   
 </section>
@@ -20379,7 +20478,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Reactivate a canceled subscription</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_subscription</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_subscription</a></p>
 
     <div class='pre p1 fill-light mt0'>Subscription</div>
   
@@ -20490,7 +20589,7 @@ need and we will usher them to the appropriate places.</p>
  will be applied on this date.
 
   <p>Pause subscription</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/pause_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/pause_subscription</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/pause_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/pause_subscription</a></p>
 
           
         </div>
@@ -20639,7 +20738,7 @@ need and we will usher them to the appropriate places.</p>
           : Trial period ends at
 
   <p>Resume subscription</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/resume_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/resume_subscription</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/resume_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/resume_subscription</a></p>
 
           
         </div>
@@ -20700,7 +20799,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Fetch a subscription's pending change</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_subscription_change">https://partner-docs.recurly.com/v2019-01-08#operation/get_subscription_change</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_subscription_change">https://partner-docs.recurly.com/v2019-01-08#operation/get_subscription_change</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -20749,7 +20848,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Create a new subscription change</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_subscription_change">https://partner-docs.recurly.com/v2019-01-08#operation/create_subscription_change</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_subscription_change">https://partner-docs.recurly.com/v2019-01-08#operation/create_subscription_change</a></p>
 
     <div class='pre p1 fill-light mt0'>SubscriptionAddOn</div>
   
@@ -20861,7 +20960,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Delete the pending subscription change</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_subscription_change">https://partner-docs.recurly.com/v2019-01-08#operation/remove_subscription_change</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/remove_subscription_change">https://partner-docs.recurly.com/v2019-01-08#operation/remove_subscription_change</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -20910,7 +21009,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>List a subscription's invoices</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_subscription_invoices">https://partner-docs.recurly.com/v2019-01-08#operation/list_subscription_invoices</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_subscription_invoices">https://partner-docs.recurly.com/v2019-01-08#operation/list_subscription_invoices</a></p>
 
     <div class='pre p1 fill-light mt0'>SubscriptionChange</div>
   
@@ -21047,7 +21146,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>List a subscription's line items</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_subscription_line_items">https://partner-docs.recurly.com/v2019-01-08#operation/list_subscription_line_items</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_subscription_line_items">https://partner-docs.recurly.com/v2019-01-08#operation/list_subscription_line_items</a></p>
 
     <div class='pre p1 fill-light mt0'></div>
   
@@ -21210,7 +21309,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>List a site's transactions</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_transactions">https://partner-docs.recurly.com/v2019-01-08#operation/list_transactions</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/list_transactions">https://partner-docs.recurly.com/v2019-01-08#operation/list_transactions</a></p>
 
  
   
@@ -21379,7 +21478,8 @@ need and we will usher them to the appropriate places.</p>
   </div>
   
 
-  <p>TransactionPaymentMethod</p>
+  <p>Fetch a transaction</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_transaction">https://partner-docs.recurly.com/v2019-01-08#operation/get_transaction</a></p>
 
     <div class='pre p1 fill-light mt0'>TransactionPaymentMethod</div>
   
@@ -21456,10 +21556,8 @@ need and we will usher them to the appropriate places.</p>
   
 </section>
 
-          
-        
-          
-          <section class='p2 mb2 clearfix bg-white minishadow'>
+  <p>Fetch a unique coupon code</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/get_unique_coupon_code">https://partner-docs.recurly.com/v2019-01-08#operation/get_unique_coupon_code</a></p>
 
   
   <div class='clearfix'>
@@ -21524,7 +21622,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Deactivate a unique coupon code</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/deactivate_unique_coupon_code">https://partner-docs.recurly.com/v2019-01-08#operation/deactivate_unique_coupon_code</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/deactivate_unique_coupon_code">https://partner-docs.recurly.com/v2019-01-08#operation/deactivate_unique_coupon_code</a></p>
 
     <div class='pre p1 fill-light mt0'>UniqueCouponCode</div>
   
@@ -21618,7 +21716,7 @@ need and we will usher them to the appropriate places.</p>
 </section>
 
   <p>Restore a unique coupon code</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_unique_coupon_code">https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_unique_coupon_code</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_unique_coupon_code">https://partner-docs.recurly.com/v2019-01-08#operation/reactivate_unique_coupon_code</a></p>
 
   
   <div class='clearfix'>
@@ -21683,7 +21781,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Create a new purchase</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_purchase">https://partner-docs.recurly.com/v2019-01-08#operation/create_purchase</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/create_purchase">https://partner-docs.recurly.com/v2019-01-08#operation/create_purchase</a></p>
 
     <div class='pre p1 fill-light mt0'>User</div>
   
@@ -21737,7 +21835,7 @@ need and we will usher them to the appropriate places.</p>
   
 
   <p>Preview a new purchase</p>
-<p><a href="https://partner-docs.recurly.com/v2019-01-08#operation/preview_purchase">https://partner-docs.recurly.com/v2019-01-08#operation/preview_purchase</a></p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/preview_purchase">https://partner-docs.recurly.com/v2019-01-08#operation/preview_purchase</a></p>
 
           
         
