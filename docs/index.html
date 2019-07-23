@@ -581,6 +581,12 @@
                       </a></li>
                       
                       <li><a
+                        href='#clientlistsubscriptioncouponredemptions'
+                        class='regular pre-open'>
+                        #listSubscriptionCouponRedemptions
+                      </a></li>
+                      
+                      <li><a
                         href='#clientlisttransactions'
                         class='regular pre-open'>
                         #listTransactions
@@ -2336,7 +2342,7 @@ prevent some records from being returned.
                 <tr>
   <td class='break-word'><span class='code bold'>params.subscriber</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
   </td>
-  <td class='break-word'><span>Filter accounts accounts with or without a subscription in the 
+  <td class='break-word'><span>Filter accounts with or without a subscription in the 
 <code>active</code>
 ,
 
@@ -3648,6 +3654,53 @@ results correspond to your request.</li>
 <li>Records are returned in an arbitrary order. Since results are all
 returned at once you can sort the records yourself.</li>
 </ul>
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.sort</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Sort field. You 
+<em>really</em>
+ only want to sort by 
+<code>updated_at</code>
+ in ascending
+order. In descending order updated records will move behind the cursor and could
+prevent some records from being returned.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.beginTime</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Filter by begin_time when 
+<code>sort=created_at</code>
+ or 
+<code>sort=updated_at</code>
+.
+
+<strong>Note:</strong>
+ this value is an ISO8601 timestamp. A partial timestamp that does not include a time zone will default to UTC.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.endTime</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Filter by end_time when 
+<code>sort=created_at</code>
+ or 
+<code>sort=updated_at</code>
+.
+
+<strong>Note:</strong>
+ this value is an ISO8601 timestamp. A partial timestamp that does not include a time zone will default to UTC.
 </span></td>
 </tr>
 
@@ -6274,7 +6327,7 @@ prevent some records from being returned.
                 <tr>
   <td class='break-word'><span class='code bold'>params.subscriber</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
   </td>
-  <td class='break-word'><span>Filter accounts accounts with or without a subscription in the 
+  <td class='break-word'><span>Filter accounts with or without a subscription in the 
 <code>active</code>
 ,
 
@@ -8695,6 +8748,53 @@ results correspond to your request.</li>
 <li>Records are returned in an arbitrary order. Since results are all
 returned at once you can sort the records yourself.</li>
 </ul>
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.sort</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Sort field. You 
+<em>really</em>
+ only want to sort by 
+<code>updated_at</code>
+ in ascending
+order. In descending order updated records will move behind the cursor and could
+prevent some records from being returned.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.beginTime</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Filter by begin_time when 
+<code>sort=created_at</code>
+ or 
+<code>sort=updated_at</code>
+.
+
+<strong>Note:</strong>
+ this value is an ISO8601 timestamp. A partial timestamp that does not include a time zone will default to UTC.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.endTime</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Filter by end_time when 
+<code>sort=created_at</code>
+ or 
+<code>sort=updated_at</code>
+.
+
+<strong>Note:</strong>
+ this value is an ISO8601 timestamp. A partial timestamp that does not include a time zone will default to UTC.
 </span></td>
 </tr>
 
@@ -12644,6 +12744,174 @@ prevent some records from being returned.
       </div>
     </div>
   
+    <div class='border-bottom' id='clientlistsubscriptioncouponredemptions'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>listSubscriptionCouponRedemptions(subscriptionId, params)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Show the coupon redemptions for a subscription</p>
+<p>API docs: <a href="https://partner-docs.recurly.com/v2018-10-04#operation/list_subscription_coupon_redemptions">https://partner-docs.recurly.com/v2018-10-04#operation/list_subscription_coupon_redemptions</a></p>
+
+    <div class='pre p1 fill-light mt0'>listSubscriptionCouponRedemptions(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, params: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="#pager">Pager</a>&#x3C;<a href="#couponredemption">CouponRedemption</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>subscriptionId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Subscription ID or UUID (use prefix: 
+<code>uuid-</code>
+, e.g. 
+<code>uuid-123457890</code>
+).
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>params</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+            = <code>{}</code>)</code>
+	    The optional url parameters for this request.
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.ids</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>
+  </td>
+  <td class='break-word'><span>Filter results by their IDs. Up to 200 IDs can be passed at once using
+commas as separators, e.g. 
+<code>ids=h1at4d57xlmy,gyqgg0d3v9n1,jrsm5b4yefg6</code>
+.
+<p>  <strong>Important notes:</strong></p>
+<ul>
+<li>The <code>ids</code> parameter cannot be used with any other ordering or filtering
+parameters (<code>limit</code>, <code>order</code>, <code>sort</code>, <code>begin_time</code>, <code>end_time</code>, etc)</li>
+<li>Invalid or unknown IDs will be ignored, so you should check that the
+results correspond to your request.</li>
+<li>Records are returned in an arbitrary order. Since results are all
+returned at once you can sort the records yourself.</li>
+</ul>
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.sort</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Sort field. You 
+<em>really</em>
+ only want to sort by 
+<code>updated_at</code>
+ in ascending
+order. In descending order updated records will move behind the cursor and could
+prevent some records from being returned.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.beginTime</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Filter by begin_time when 
+<code>sort=created_at</code>
+ or 
+<code>sort=updated_at</code>
+.
+
+<strong>Note:</strong>
+ this value is an ISO8601 timestamp. A partial timestamp that does not include a time zone will default to UTC.
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>params.endTime</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Filter by end_time when 
+<code>sort=created_at</code>
+ or 
+<code>sort=updated_at</code>
+.
+
+<strong>Note:</strong>
+ this value is an ISO8601 timestamp. A partial timestamp that does not include a time zone will default to UTC.
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#pager">Pager</a>&#x3C;<a href="#couponredemption">CouponRedemption</a>></code>:
+        A list of the the coupon redemptions on a subscription.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
     <div class='border-bottom' id='clientlisttransactions'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -15538,7 +15806,8 @@ need and we will usher them to the appropriate places.</p>
       
         <div class='space-bottom0'>
           <span class='code bold'>fraud</span> <code class='quiet'>(<a href="#fraudinfo">FraudInfo</a>)</code>
-          
+          : Most recent fraud result.
+
           
         </div>
       
@@ -16308,7 +16577,10 @@ need and we will usher them to the appropriate places.</p>
       
         <div class='space-bottom0'>
           <span class='code bold'>trial</span> <code class='quiet'>(<a href="#coupondiscounttrial">CouponDiscountTrial</a>)</code>
-          
+          : This is only present when 
+<code>type=free_trial</code>
+.
+
           
         </div>
       
@@ -17797,7 +18069,10 @@ need and we will usher them to the appropriate places.</p>
       
         <div class='space-bottom0'>
           <span class='code bold'>transactionError</span> <code class='quiet'>(<a href="#transactionerror">TransactionError</a>)</code>
-          
+          : This is only included on errors with 
+<code>type=transaction</code>
+.
+
           
         </div>
       
