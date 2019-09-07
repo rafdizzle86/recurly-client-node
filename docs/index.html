@@ -11327,7 +11327,7 @@ prevent some records from being returned.
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>cancelSubscription(subscriptionId)</span>
+            <span class='code strong strong truncate'>cancelSubscription(subscriptionId, body)</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -11338,7 +11338,7 @@ prevent some records from being returned.
   <p>Cancel a subscription</p>
 <p>API docs: <a href="https://partner-docs.recurly.com/v2019-01-08#operation/cancel_subscription">https://partner-docs.recurly.com/v2019-01-08#operation/cancel_subscription</a></p>
 
-    <div class='pre p1 fill-light mt0'>cancelSubscription(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#subscription">Subscription</a>></div>
+    <div class='pre p1 fill-light mt0'>cancelSubscription(subscriptionId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, body: SubscriptionCancel): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#subscription">Subscription</a>></div>
   
   
 
@@ -11361,6 +11361,15 @@ prevent some records from being returned.
 , e.g. 
 <code>uuid-123457890</code>
 ).
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>body</span> <code class='quiet'>(SubscriptionCancel)</code>
+	    The object representing the JSON request to send to the server. It should conform to the schema of {SubscriptionCancel}
 
           </div>
           
